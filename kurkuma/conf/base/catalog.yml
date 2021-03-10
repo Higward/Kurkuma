@@ -11,3 +11,9 @@ vpo_pkv:
     schema: vpo
   save_args:
     if_exists: replace
+
+org_data:
+  type:  kurkuma.extras.datasets.apitokendataset.APIWithTokenDataSet
+  url: 'http://10.117.4.24:3022/organisations/'
+  method: 'GET'
+  credentials: org_data_token
